@@ -1,0 +1,21 @@
+name: Build, test and publish
+
+on:
+  push
+
+jobs:
+  build-test-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+    - name: Build
+      run: dotnet build
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+    - name: Publish
+      if: github.ref == 'refs/heads/master'
+      run: dotnet nuget push **\*.nupkg -s 'https://api.nuget.org/v3/index.json' -k ${{secrets.NUGET_API_KEY}}
