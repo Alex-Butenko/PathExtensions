@@ -10,7 +10,7 @@
     <PackageProjectUrl>https://github.com/Alex-Butenko/PathExtensions</PackageProjectUrl>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/Alex-Butenko/PathExtensions</RepositoryUrl>
-    <PackageTags>System.IO.Path</PackageTags>
+    <PackageTags>Path, File, Directory, FileInfo, DirectoryInfo</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Description>
       Dotnet has lots of useful apis for work with files and directories. However, using them it always feels like there are actually a few sets of overlapping tools.
