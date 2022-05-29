@@ -22,6 +22,10 @@
       So, the purpose of this project is to create a few wrappers and extensions so if would be possible to use same methods as in Path, File and Directory, but also having all advantages of DirectoryInfo and FileInfo as arguments and return types.
     </Description>
     <Version>1.0.1</Version>
+    <PackageId>PathExtensions</PackageId>
+    <Authors>Alex Butenko</Authors>
+    <Company />
+    <Product>PathExtensions</Product>
   </PropertyGroup>
 
   <ItemGroup>
